@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="kasongi.css">
+     <script src="https://kit.fontawesome.com/21aaf0ddb2.js" crossorigin="anonymous"></script>
+    <title>Soccer</title>
+</head>
+<body>
+    <div id="content">
+
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+         <label class="logo">LoWellSport</label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav> 
+    
+            <pitch data-tilt> 
+                
+                    <p>Edwards soccer field
+            
+                        <img src="edwardf1.jpg" width="40px" height="40px">
+                    </p> 
+               
+                
+            </pitch>
+            <Coming > 
+                <div class="event-form">
+                    <h1>Post An Event</h1>
+                    <form>
+                        <select id="Sport">
+                            <option value="Sport">Soccer</option>
+                            <option value="Basketball">Basketball</option>
+                            <option value="Football">Football</option>
+                            <option value="Tennis">Tennis</option>
+                            <option value="Volleyball">Volleyball</option>
+                            <option value="Golf">Golf</option>
+                            <option value="Baseball">Baseball</option>
+                           </select>
+                        <input type="text"  name="name" placeholder="Name">
+                        <input type="text" name="contact" placeholder="contact">
+                        <input type="date" name="date"   placeholder="date">
+                        <label for="Sport">
+                        
+                           <input type="text" name="Address" placeholder="Address">
+                           <textarea>Tell us about the Event</textarea>
+                           <input data-tilt type="submit" value="submit">
+                    </form>
+                </div>
+
+                
+                
+                
+
+            </Coming>
+            <aside data-tilt>Coming Events</aside>
+            <footer>footer</footer>
+    
+       
+        <script type="text/javascript" src="vanilla-tilt.babel.js"></script>
+</body>
+</html>
