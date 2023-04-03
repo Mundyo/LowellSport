@@ -31,9 +31,8 @@ app.use(express.static('public'));
 
 
 app.get('/', (req,res)=>{
-
-res.render('index')
+    res.render('index')
 });
 // app.use('/route', SportRouter);
 
-app.listen(5000);
+app.listen(3000);
