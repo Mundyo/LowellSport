@@ -5,10 +5,8 @@ const Sport= require('./models/Model');
 const SportRouter= require('./routes/route');
 const morgan = require('morgan');
 
-
-
-
-const MongoDB= 'mongodb+srv://Mundyo:Kasongi2014@lowellsport.wlprqwj.mongodb.net/test';
+const MongoDB= 'mongodb+srv://Mundyo:Kasongi2014@lowellsport.wlprqwj.mongodb.net/Lowell?retryWrites=true&w=majority'
+// const MongoDB= 'mongodb+srv://Mundyo:Kasongi2014@lowellsport.wlprqwj.mongodb.net/Lowell';
  
 console.log(MongoDB);
 
@@ -33,6 +31,6 @@ app.use(express.static('public'));
 app.get('/', (req,res)=>{
     res.render('index')
 });
-// app.use('/route', SportRouter);
+app.use('/', SportRouter);
 
 app.listen(3000);

@@ -6,6 +6,13 @@
         <th>City</th>
         <th>Zip-code</th>
     </tr>
+    <% for (var i = 0; i < Sport.length; i++) { %>
+        <th><%= Sport[i].type %></th>
+        <th><%= Sport[i].name %></th>
+        <th><%= Sport[i].address %></th>
+        <th><%= Sport[i].city %></th>
+        <th><%= Sport[i].zipcode %></th>
+    <% } %>
     <tr>
         <!-- <td>< Sport.type %></td>
         <td>< Sport.name %> </td>

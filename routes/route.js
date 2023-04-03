@@ -3,16 +3,19 @@ const Model= require('./../models/Model');
 const router = express.Router();
 const morgan= require('morgan');
 
-router.get('/', async(req,res,next)=>{
-    const Sport = await lowell.sport.findByType({type:'soccer'})
-    res.render('index',{Sport:soccer})
-    // next()
+router.get('/soccer', async(req,res,next)=>{
+    const Sport = await Model.find({type:'Soccer'})
+
+    console.warn(Sport);
+
+    // res.render('soccer',{Sport:soccer})
+    res.render('soccer',{Sport})
 })
 
-router.get('/soccer', async(req,res,next)=>{
-    // const Sport = await lowell.sport.findByType({type:'soccer'})
-    // res.render('soccer',{Sport:soccer})
-    res.render('soccer')
+router.get('/', async(req,res,next)=>{
+    let Sport = await Model.find({type:'soccer'})
+    res.render('index',{Sport: Model})
+    // next()
 })
 
 module.exports= router
