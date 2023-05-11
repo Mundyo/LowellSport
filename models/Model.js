@@ -28,4 +28,19 @@ const SportSchema = new mongoose.Schema({
     },
 })
 
-module.exports= mongoose.model('sport', SportSchema )
+module.exports= mongoose.model('Sport', SportSchema )
+
+// SportSchema.pre('validate', function(next) {
+//     if (this.type) {
+//       this.slug = slugify(this.type, { lower: true, strict: true })
+//     }
+  
+//     if (this.name) {
+//       this.sanitizedHtml = DOMPurify.sanitize(this.name)
+//     }
+  
+//     next()
+//   })
+
+
+

@@ -147,6 +147,7 @@ height: auto ;
 
 footer{
 grid-area: footer;
+
 }
 aside{
     grid-area: aside;
