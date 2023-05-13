@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(rgba(134, 134, 134, 0),rgba(134, 134, 134, 0)),url("abstract_green_4k_hd-2560x1440.jpg");
+    background-image: linear-gradient(rgba(66, 66, 66, 0),rgba(134, 134, 134, 0)),url("abstract_green_4k_hd-2560x1440.jpg");
     background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     text-align: Center;
@@ -16,8 +16,9 @@ grid-gap: 10px;
 margin: 0 auto; 
 grid-template-areas: 
 "nav nav nav nav "
-"picture picture lowell lowell"
-"picture picture lowell lowell"
+"picture picture picture picture"
+"picture picture picture picture"
+"lowell lowell lowell lowell"
 "Sport Sport Sport Sport"
 "Sport Sport Sport Sport"
 "table table table table"
@@ -40,8 +41,9 @@ grid-template-areas:
         margin: 0 auto;
         grid-template-areas:
         "nav nav nav nav"
-        "picture picture picture lowell"
-        "picture picture picture lowell"
+        "picture picture picture picture"
+        "picture picture picture picture"
+        "lowell lowell lowell lowell"
         "table table Sport Sport"
         "table table Sport Sport"
         "post aside section section "
@@ -104,7 +106,7 @@ picture{
 }
 video{
   object-fit: cover;
-  width:80%;
+  width:100%;
   max-height:80%;
   border-radius: 16px ;
   -webkit-border-radius: 16px ;
@@ -120,6 +122,8 @@ lowell{
   
     width: 100%;
     height: fit-content;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
 }
 table{
   grid-area: table;
@@ -134,8 +138,7 @@ grid-gap:5px;
 
 section{
 grid-area: section;
-background-color:yellowgreen;
-opacity: 0.7;
+background-color:#01394e;
 border-radius: 16px;
 -webkit-border-radius: 16px;
 -moz-border-radius: 16px;
@@ -147,6 +150,14 @@ height: auto ;
 
 footer{
 grid-area: footer;
+  
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+ 
 
 }
 aside{
@@ -160,6 +171,16 @@ nav{
   }
   table{
     grid-area: table;
+     /* background-color: #ccc;  */
+     /* opacity: 0.5; */
+  }
+  table thead{
+background-color: rgb(147, 3, 3);
+  }
+  table td{
+    background-color: #ccc; 
+    color: #041c2f;
+    opacity: 0.6;
   }
   post{
     grid-area:post;
@@ -170,7 +191,7 @@ nav{
 
 
 nav{
-    background-color: #194d76;
+    /* background-color: #194d76; */
     opacity: 0.9;
     height:80px;
     width:95%;
@@ -205,6 +226,7 @@ nav ul li{
 nav ul li a{
     color:#f3f4f7;
     font-size: 17px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-transform: uppercase;
     text-decoration-style:solid;
     border-radius:3px ;
@@ -298,7 +320,7 @@ input[type=submit]{
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
-  background:yellowgreen;
+  background:rgb(101, 131, 41);
   color: #fff;
 }
 textarea{
