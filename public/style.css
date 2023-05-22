@@ -51,48 +51,12 @@ grid-template-areas:
         "footer footer footer footer "
         ;
     }
-}
-/* @media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 858px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #1c3b5a;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-      z-index: 100;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-     a:hover,a.active{
-      background: none;
-      color: #0082e6;
-     }
-    #check:checked ~ ul{
-      left: 0;
-    }
-  } */
     
+}
+
+
+
+
 
 
 
@@ -119,11 +83,15 @@ video{
 
 lowell{
     grid-area: lowell;
-  
+    color: #01394e;
+    background-color: rgba(255, 255, 255, 0.742);
+    opacity: 0.7;
     width: 100%;
     height: fit-content;
     font-size: 25px;
     font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding:0;
 }
 table{
   grid-area: table;
@@ -203,11 +171,17 @@ nav{
     -o-border-radius: 40px ;
 }
 label.logo{
-    color: #f3f4f7;
-    font-size:35px;
-    line-height:80px;
+    color: #f7f3f3;
+    background-color: rgb(147, 3, 3);
+    border-radius: 10px;
+    font-size:45px;
+    line-height:100px;
     padding:0 100px;
     font-weight: bold;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 nav ul{
     color:#496b88;
@@ -251,6 +225,7 @@ a.active, a:hover{
   #check{
     display:none;
   }
+
   @media (max-width: 952px){
     label.logo{
       font-size: 30px;
@@ -298,7 +273,9 @@ a.active, a:hover{
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
       padding: 20px;
+    }
     
+ 
       
 }
 input[type=text], select{
@@ -332,11 +309,45 @@ textarea{
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-  }
+  
  
   footer{
     background: #041c2f;
+    max-width: 100%;
+
   }
+  
+footer .logo {
+  color: white;
+  font-size: 35px;
+  background-color: rgb(147, 3, 3);
+  float: left;
+  margin: 0;
+  margin-top: 30px;
+ 
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.footer-links {
+  text-align: right;
+}
+
+.footer-links a {
+  color: white;
+  margin-right: 5px;
+  text-decoration: none;
+}
   .event-form{
     max-width: 350px;
     margin: auto;

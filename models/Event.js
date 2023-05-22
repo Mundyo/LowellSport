@@ -6,11 +6,16 @@ const createDomPurify = require('dompurify')
 const { JSDOM } = require('jsdom')
 const DOMPurify = createDomPurify (new JSDOM().window)
 
+
 const eventSchema = new mongoose.Schema({
 
-    Sport:{
+    event:{
         type:String,
         required: true
+    },
+    title:{
+          type: String,
+          required: true
     },
     name:{
         type: String,
@@ -49,8 +54,8 @@ const eventSchema = new mongoose.Schema({
 })
 
 eventSchema.pre('validate', function(next) {
-  if (this.Sport) {
-    this.slug = slugify(this.Sport, { lower: true, strict: true })
+  if (this.event) {
+    this.slug = slugify(this.event, { lower: true, strict: true })
   }
 
   if (this.markdown) {
