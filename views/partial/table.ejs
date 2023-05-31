@@ -9,8 +9,9 @@
             <th>City</th>
             <th>zipcode</th>
         </tr>
+        
     </thead>
-    <tbody>
+    <tbody id="tableBody">
         <% for (var i = 0; i < Sport.length; i++) { %>
             <tr>
                 <td><%= Sport[i].type %></td>
@@ -22,5 +23,20 @@
         <% } %>
     </tbody>
 </table>
+<!-- <script>
+    function reloadTAble(event){
+        event.preventDefault();
+         fetch('/soccer')
+        .then(response => response.text())
+        .then(data =>{
+            document.getElementById('tableBody').innerHTML = data;
+        })
+        .catch(error=>{
+            console.error('Error:', error);
+        });
+
+
+    }
+</script>
       
-      
+       -->

@@ -44,7 +44,7 @@ app.get('/soccer', function(req, res) {
     Sport.find({type: 'soccer'}, function(err, Sport) {
       if (err) throw err;
       res.render('soccer', {Sport: Sport});
-      
+     
   
     });
 });
