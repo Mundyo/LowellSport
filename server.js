@@ -50,7 +50,6 @@ app.get('/soccer', function(req, res) {
 });
 
 
-
  app.use('/', SportRouter);
 //   app.use('/event', EventRouter);
 
