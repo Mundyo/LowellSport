@@ -98,9 +98,11 @@ lowell{
     font-family:'Times New Roman', Times, serif;
     margin: 0;
     padding:0;
+    display: flex;
 }
 lowell img{
   border-radius: 30px;
+  height: 100%;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -137,21 +139,19 @@ height: auto ;
 @media screen and (min-width:760px){
   section{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-auto-rows: minmax(100px,auto);
     max-width: 1200px;
     /* /* grid-gap: 5px;   */
     grid-gap:0.5%;
     margin: 0 auto; 
     grid-template-areas: 
-    "soccer soccer golf golf"
-    "soccer soccer golf golf"
-    "basket basket volley volley"
-    "basket basket volley volley"
-    "tennis tennis  foot foot"
-    "tennis tennis  foot foot"
-    "base base  park park"
-    "base base  park park"
+    "soccer golf basket"
+    "soccer golf basket"
+    "volley tennis foot"
+    "volley tennis foot"
+    "base base park"
+  
     }
     .soccer{
       grid-area: soccer;
@@ -162,8 +162,8 @@ height: auto ;
     
     .soccer img {
     
-      width: 60%;
-      height: 50%;
+      width: 70%;
+      height: 60%;
       position: absolute;
       top: 0;
       left: 0;
@@ -175,7 +175,7 @@ height: auto ;
     }
     
     .soccer p {
-      margin-top: 18%;
+      margin-top: 40%;
       background-color:#01394e;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -194,8 +194,8 @@ height: auto ;
     
     .basket img {
     
-      width: 60%;
-      height: 50%;
+      width: 70%;
+      height: 60%;
       position: absolute;
       top: 0;
       left: 0;
@@ -207,7 +207,7 @@ height: auto ;
     }
     
     .basket p {
-      margin-top: 15%;
+      margin-top: 40%;
       background-color:#01394e;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -224,8 +224,8 @@ height: auto ;
       }
      
       .golf img {
-        width: 60%;
-        height: 50%;
+        width: 70%;
+        height: 60%;
         position: absolute;
         top: 0;
         left: 0;
@@ -237,7 +237,7 @@ height: auto ;
       }
       
       .golf p {
-        margin-top: 11%;
+        margin-top: 30%;
         background-color:#01394e;
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -258,8 +258,8 @@ height: auto ;
     
       .volley img {
       
-        width: 60%;
-        height: 50%;
+        width: 70%;
+        height: 60%;
         position: absolute;
         top: 0;
         left: 0;
@@ -271,7 +271,7 @@ height: auto ;
       }
       
       .volley p {
-        margin-top: 18%;
+        margin-top: 42%;
         background-color:#01394e;
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -287,9 +287,10 @@ height: auto ;
       width: 100%;
       height: 100%;
     }
+
     .tennis img {
-      width: 60%;
-      height: 50%;
+      width: 70%;
+      height: 60%;
       position: absolute;
       top: 0;
       left: 0;
@@ -301,7 +302,7 @@ height: auto ;
     }
     
     .tennis p {
-      margin-top: 18%;
+      margin-top: 45%;
       background-color:#01394e;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -311,18 +312,64 @@ height: auto ;
     }
     
     
-    
+       
     .base{
       grid-area:base;
+    }
+    .base img{
+      width: 50%;
+      height: 80%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    } 
+    .base p{
+      margin-top: 40%;
       background-color:#01394e;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
     }
     .foot{
       grid-area: foot;
-      background-color:#01394e;
+      
+      width: 100%;
+      height:100%;
     }
+    .foot img{
+      width: 70%;
+      height: 60%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    .foot p{
+      margin-top: 45%;
+      background-color:#01394e;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+
+
+
     .park{
       grid-area: park;
-      background-color:#01394e;
+      /* background-color:#01394e; */
     }
     
      
@@ -336,7 +383,7 @@ height: auto ;
 @media screen and (max-width:760px){
   section{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-auto-rows: minmax(100px,auto);
     max-width: 1200px;
     /* /* grid-gap: 5px;   */
@@ -374,7 +421,7 @@ height: auto ;
     }
     
     .soccer p {
-      margin-top: 34%;
+      margin-top: 27%;
       background-color:#01394e;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -406,7 +453,7 @@ height: auto ;
     }
     
     .basket p {
-      margin-top: 23%;
+      margin-top: 38%;
       background-color:#01394e;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -436,7 +483,7 @@ height: auto ;
       }
       
       .golf p {
-        margin-top: 22%;
+        margin-top: 35%;
         background-color:#01394e;
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -467,16 +514,18 @@ height: auto ;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
+        z-index: -1;
       }
       
       .volley p {
-        margin-top: 38%;
+        margin-top: 60%;
         background-color:#01394e;
         border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
+        
       }
     
     
@@ -500,7 +549,7 @@ height: auto ;
     }
     
     .tennis p {
-      margin-top: 38%;
+      margin-top: 35%;
       background-color:#01394e;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -513,15 +562,61 @@ height: auto ;
     
     .base{
       grid-area:base;
+    }
+    .base img{
+      width: 60%;
+      height: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    } 
+    .base p{
+      margin-top: 30%;
       background-color:#01394e;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
     }
     .foot{
       grid-area: foot;
-      background-color:#01394e;
+      
+      width: 100%;
+      height:100%;
     }
+    .foot img{
+      width: 60%;
+      height: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      z-index: -1;
+    }
+    .foot p{
+      margin-top: 50%;
+      background-color:#01394e;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+
+
     .park{
       grid-area: park;
-      background-color:#01394e;
+      /* background-color:#01394e; */
     }
     
      
@@ -543,8 +638,22 @@ grid-area: footer;
 
 }
 aside{
-    grid-area: aside;
+  grid-area: aside;
+  background-color:#054375;
+  opacity: 0.7;
+  border-radius: 40px;
+  border: #041c2f;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
 }
+aside p{
+  color: #fff;
+}
+
 nav{
     grid-area: nav;
     overflow: hidden;
@@ -564,8 +673,148 @@ background-color: rgb(147, 3, 3);
     color: #041c2f;
     opacity: 0.6;
   }
+
+
   post{
     grid-area:post;
+  }
+  @media screen and (max-width:760px){
+
+    #postcontent{
+      display:grid;
+      max-width:960px;
+      margin:0 auto; 
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows:minmax(25px,auto) ;
+      grid-gap:0.5rem;
+      margin:0, auto;
+   
+      
+   
+   }
+    #postcontent div{
+       /* background: #333; */
+       padding: 30px;  
+   
+   } 
+   
+   .One{
+      grid-column: 1/3;
+      grid-row: 1/5;
+      background-color: rgb(146, 58, 58);
+   }
+   .One p{
+       font-size: 150%; 
+   }
+   .two{
+       grid-column: 3/7;
+       grid-row: 1/3;
+       background-color:#054375;
+       }
+   .two p{
+       /* font-size: 200%; */
+   }    
+   .three{
+       grid-column: 3/5;
+       grid-row: 3/5;
+       background-color: rgba(50, 76, 3, 0.653);
+   }
+   .three p{
+       /* font-size:100% ; */
+   }
+   .four{
+       grid-column: 5/7;
+       grid-row: 3/7;
+       /* background-color: rgb(49, 34, 92); */
+       background: #2c3e50;
+   }
+   .four p{ 
+       font-size: 150%; 
+   }
+   .five{
+       grid-column: 1/5;
+       grid-row: 5/7;
+       background-color: rgb(19, 18, 18);
+   }
+   .five p{
+       /* font-size: 200%; */
+   }
+   #postcontent{
+       transform: rotateZ(45deg) scale(0.7);
+       -webkit-transform: rotateZ(45deg) scale(0.7);
+       -moz-transform: rotateZ(45deg) scale(0.7);
+       -ms-transform: rotateZ(45deg) scale(0.7);
+       -o-transform: rotateZ(45deg) scale(0.7);
+   }
+  }
+  @media screen and (min-width:760px){
+    
+#postcontent{
+  display:grid;
+  max-width:960px;
+  margin:0 auto; 
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows:minmax(150px,auto) ;
+  grid-gap:10px;
+  margin:0, auto;
+
+  
+
+}
+#postcontent div{
+   /* background: #333; */
+   padding: 30px;  
+
+} 
+
+.One{
+  grid-column: 1/3;
+  grid-row: 1/5;
+  background-color: rgb(146, 58, 58);
+}
+.One p{
+   font-size: 200%;
+}
+.two{
+   grid-column: 3/7;
+   grid-row: 1/3;
+   background-color:#054375;
+   }
+.two p{
+   font-size: 200%;
+}    
+.three{
+   grid-column: 3/5;
+   grid-row: 3/5;
+   background-color: rgba(50, 76, 3, 0.653);
+}
+.three p{
+   font-size:100% ;
+}
+.four{
+   grid-column: 5/7;
+   grid-row: 3/7;
+   /* background-color: rgb(49, 34, 92); */
+   background: #2c3e50;
+}
+.four p{
+   font-size: 200%;
+}
+.five{
+   grid-column: 1/5;
+   grid-row: 5/7;
+   background-color: rgb(19, 18, 18);
+}
+.five p{
+   font-size: 200%;
+}
+#postcontent{
+   transform: rotateZ(45deg) scale(0.7);
+   -webkit-transform: rotateZ(45deg) scale(0.7);
+   -moz-transform: rotateZ(45deg) scale(0.7);
+   -ms-transform: rotateZ(45deg) scale(0.7);
+   -o-transform: rotateZ(45deg) scale(0.7);
+}
   }
 
 
@@ -649,183 +898,7 @@ a.active, a:hover{
       font-size: 16px;
     }
 
-
-
-    
-
-
   }
-/* 
-@media (max-width: 700px) {
-  
-.soccer img {
-
-  width: 60%;
-  height: 40%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.soccer p {
-  margin-top: 36%;
-  max-height: min-content;
-  background-color:#01394e;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-
-.basket{
-  grid-area: basket;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.basket img {
-
-  width: 60%;
-  height: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.basket p {
-  margin-top: 45%;
-  background-color:#01394e;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-.golf{
-  grid-area: golf;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  }
- 
-  .golf img {
-    width: 60%;
-    height: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-  }
-  
-  .golf p {
-    margin-top: 50%;
-    background-color:#01394e;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-  }
-
-
-
-.volley{
-    grid-area: volley;
-    
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-
-  .volley img {
-  
-    width: 60%;
-    height: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-  }
-  
-  .volley p {
-    margin-top: 50%;
-    background-color:#01394e;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-  }
-
-
-.tennis{
-  grid-area: tennis;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.tennis img {
-  width: 60%;
-  height: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.tennis p {
-  margin-top: 50%;
-  background-color:#01394e;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-
-
-.base{
-  grid-area:base;
-  background-color:#01394e;
-}
-.foot{
-  grid-area: foot;
-  background-color:#01394e;
-}
-.park{
-  grid-area: park;
-  background-color:#01394e;
-}
-
-}
- */
 
 
 
