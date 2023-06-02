@@ -848,7 +848,7 @@ label.logo{
 }
 nav ul{
     color:#496b88;
-    float: right;
+    float:right;
     margin-right: 20px;
 
 }
@@ -884,6 +884,7 @@ a.active, a:hover{
     margin-right: 40px;
     cursor: pointer;
     display:none;
+    
   }
   #check{
     display:none;
@@ -915,7 +916,7 @@ a.active, a:hover{
       height: 100vh;
       background: #2c3e50;
       top: 80px;
-      left: -100%;
+      left: -200%;
       text-align: center;
       transition: all .5s;
     }
@@ -945,7 +946,19 @@ a.active, a:hover{
       padding: 20px;
     }
     
- 
+    .hidden {
+      display: none;
+    }
+    #navigation {
+      /* your existing styles */
+      display: none; /* add this line to hide the navigation by default */
+    }
+    
+    /* Add this rule to show the navigation when the 'hidden' class is not applied */
+    #navigation:not(.hidden) {
+      display: block;
+    }
+    
       
 }
 input[type=text], select{

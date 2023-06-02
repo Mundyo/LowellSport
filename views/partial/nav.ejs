@@ -1,4 +1,4 @@
-    <nav>
+    <nav id="navigation">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
@@ -12,5 +12,18 @@
             <li><a href="/contact">Contact</a></li>
            
         </ul>
-        
+        <script>
+            // Get the navigation element
+var navigation = document.getElementById('navigation');
+
+// Get the check button or "fas fa-bars" icon element
+var checkButton = document.getElementById('checkButton'); // Replace 'checkButton' with the actual id of your check button or icon element
+
+// Add a click event listener to the check button or icon
+checkButton.addEventListener('click', function() {
+  // Toggle the 'hidden' class on the navigation element
+  navigation.classList.toggle('hidden');
+});
+
+        </script>
     </nav>  
