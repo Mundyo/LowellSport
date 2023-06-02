@@ -1120,3 +1120,14 @@ input[type=submit]{
   opacity: 1;
 }
 
+#AboutContact{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  
+}
+#AboutContact p{
+  background-color: #01394e;
+  font-size: 50px;
+}
