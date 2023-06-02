@@ -53,8 +53,8 @@ app.get('/soccer', function(req, res) {
  app.use('/', SportRouter);
 //   app.use('/event', EventRouter);
 
+app.listen(process.env.PORT || 5000)
 
-app.listen(7000);
 
 
 
