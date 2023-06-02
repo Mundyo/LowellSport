@@ -626,7 +626,7 @@ height: auto ;
 
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:500px){
   section{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -686,7 +686,7 @@ height: auto ;
     }
     
     .basket img {
-    
+      
       width: 60%;
       height: 30%;
       position: absolute;
@@ -697,6 +697,7 @@ height: auto ;
       -moz-border-radius: 10px;
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
+      z-index: 1;
     }
     
     .basket p {
@@ -787,6 +788,7 @@ height: auto ;
     .tennis img {
       width: 60%;
       height: 50%;
+      margin-bottom:20px;
       
       position: absolute;
       top: 0;
@@ -799,7 +801,7 @@ height: auto ;
     }
     
     .tennis p {
-      margin-top: 55%;
+      margin-top: 65%;
       background-color:#01394e;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -812,6 +814,7 @@ height: auto ;
     
     .base{
       grid-area:base;
+      margin-bottom: 50px;
     }
     .base img{
       width: 60%;
