@@ -33,19 +33,33 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   res.render("index");
-}
+
+});
+
+app.get('/soccer', function(req, res) {
+    Sport.find({type: 'soccer'}, function(err, Sport) {
+      if (err) throw err;
+      res.render('soccer', {Sport: Sport});
+      
+  
+    });
+})
+
 app.get("/soccer", function (req, res) {
   Sport.find({ type: "soccer" }, function (err, Sport) {
     if (err) throw err;
     res.render("soccer", { Sport: Sport });
   
+
+})
 });
 
-app.use("/", SportRouter);
 
 
  app.use('/', SportRouter);
 //   app.use('/event', EventRouter);
+
+
 
 app.listen(process.env.PORT || 5000)
 
