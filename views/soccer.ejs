@@ -20,5 +20,12 @@
 <%- include('partial/section.ejs') %>
 <%- include('partial/footer') %>
     </div>
+    <script>
+        function scrollToTable() {
+          const tableElement = document.getElementById('sportTable');
+          tableElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      </script>
+      
 </body>
 </html>

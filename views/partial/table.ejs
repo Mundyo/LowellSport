@@ -1,5 +1,5 @@
 
-<table border="1">
+<table id="sportTable" border="1">
   
     <thead>
         <tr>
@@ -9,8 +9,9 @@
             <th>City</th>
             <th>zipcode</th>
         </tr>
+        
     </thead>
-    <tbody>
+    <tbody id="tableBody">
         <% for (var i = 0; i < Sport.length; i++) { %>
             <tr>
                 <td><%= Sport[i].type %></td>
@@ -22,5 +23,5 @@
         <% } %>
     </tbody>
 </table>
-      
-      
+
+ 

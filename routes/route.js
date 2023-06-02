@@ -55,6 +55,16 @@ const Sport= require('../models/Model');
         res.render('soccer', {Sport: Sport});
       });
     });
+    router.get('/about', function(req, res){
+      res.render('about');
+    })
+    router.get('/allsports', function(req, res){
+      res.render('allsports');
+    })
+    router.get('/contact', function(req, res){
+      res.render('contact');
+    })
+
 
 module.exports= router
 
