@@ -625,6 +625,256 @@ height: auto ;
 
 
 
+
+@media screen and (max-width:600px){
+  section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    max-width: 400px;
+    /* max-height: 500px; */
+    /* /* grid-gap: 5px;   */
+    grid-gap:0.5%;
+    margin: 0 auto; 
+    grid-template-areas: 
+    "soccer soccer golf golf"
+    "soccer soccer golf golf"
+    "basket basket volley volley"
+    "basket basket volley volley"
+    "tennis tennis  foot foot"
+    "tennis tennis  foot foot"
+    "base base  park park"
+    "base base  park park"
+    }
+    .soccer{
+      grid-area: soccer;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .soccer img {
+    
+      width: 60%;
+      height: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    
+    .soccer p {
+      margin-top: 50%;
+      background-color:#01394e;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+    
+    
+    .basket{
+      grid-area: basket;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .basket img {
+    
+      width: 60%;
+      height: 30%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    
+    .basket p {
+      margin-top: 45%;
+      background-color:#01394e;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+    
+    .golf{
+      grid-area: golf;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      }
+     
+      .golf img {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+      }
+      
+      .golf p {
+        margin-top: 40%;
+        background-color:#01394e;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+    
+    
+    
+    .volley{
+        grid-area: volley;
+        
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+    
+      .volley img {
+      
+        width: 90%;
+        height: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        /* z-index: -1; */
+      }
+      
+      .volley p {
+        max-height: 32%;
+        overflow: hidden;
+        margin-top: 80%;
+        background-color:#01394e;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        
+      }
+    
+    
+    .tennis{
+      grid-area: tennis;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .tennis img {
+      width: 60%;
+      height: 50%;
+      
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    
+    .tennis p {
+      margin-top: 55%;
+      background-color:#01394e;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+    
+    
+    
+    .base{
+      grid-area:base;
+    }
+    .base img{
+      width: 60%;
+      height: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    } 
+    .base p{
+      margin-top: 40%;
+      background-color:#01394e;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+    .foot{
+      grid-area: foot;
+      
+      width: 100%;
+      height:100%;
+    }
+    .foot img{
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      z-index: -1;
+    }
+    .foot p{
+      margin-top: 125%;
+      background-color:#01394e;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+
+
+    .park{
+      grid-area: park;
+      /* background-color:#01394e; */
+    }
+    
+     
+    
+}
+
+
+
 footer{
 grid-area: footer;
   
