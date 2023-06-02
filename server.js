@@ -33,6 +33,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   res.render("index");
+
 });
 
 app.get('/soccer', function(req, res) {
@@ -42,6 +43,15 @@ app.get('/soccer', function(req, res) {
       
   
     });
+})
+
+app.get("/soccer", function (req, res) {
+  Sport.find({ type: "soccer" }, function (err, Sport) {
+    if (err) throw err;
+    res.render("soccer", { Sport: Sport });
+  
+
+})
 });
 
 
@@ -50,4 +60,10 @@ app.get('/soccer', function(req, res) {
 //   app.use('/event', EventRouter);
 
 
-app.listen(7000);
+
+app.listen(process.env.PORT || 5000)
+
+
+
+
+
